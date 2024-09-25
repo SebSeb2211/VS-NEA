@@ -176,11 +176,15 @@ dataB = databaseInterface()
 
 
 
+# *** UP TO HERE ALREADY INCLUDED IN DB.PY *** #
+
+
+
 login = False
 while login == False:
     username = input("Username: ")
     searchName = dataB.getNamedUser(username)
-
+    
 
     if username in searchName:
         print("Login successful")
